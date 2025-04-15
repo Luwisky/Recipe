@@ -96,7 +96,7 @@ li::marker {
     font-weight: 700;
 } 
 
-ol, ul{
+ol{
     list-style-position: outside;
     padding-left: 20px; 
 }
@@ -106,23 +106,23 @@ ol li{
 }
 
 ul{
-    padding-left: 40px; 
+    padding-left: 30px; 
 }
 
 ul li{
-    padding-left: 1px; 
+    padding-left: 12px;
 } 
    
 .Instruct{
-    border-bottom: 1px solid #ccc;
     padding-bottom: 20px;
     margin-top: 32px;
     margin-bottom: 20px;
     line-height: 30px; 
+    border-bottom: 1px solid #ccc;
     font-family: "Outfit", sans-serif;
 }
 
-.nutri{
+.Nutrition{
     gap: 24px;
     line-height: 25px; 
 }
@@ -140,6 +140,8 @@ ul li{
 .nutrition-table {
     border-collapse: collapse;
     width: 100%;
+    margin-left: 30px;
+    padding-left: 5px; 
 }
                   
 .nutrition-table td {
@@ -156,6 +158,7 @@ ul li{
     gap: 20px;
     padding-right: 300px;
     padding-left: 10px;
+    margin-left: 30px;
  }
 
  .fatty{
@@ -168,10 +171,12 @@ ul li{
     text-align: center;
     margin-top: 40px;
  }
- @media (max-width: 480px) {
+
+ /* mobile view */
+ @media (max-width: 600px) {
     .component {
-      width: 95%;
-      margin-top: 48px;
+      width: 70%;
+      height: auto;
     }
   
     .img-container {
@@ -196,9 +201,18 @@ ul li{
     .color2, .color3, .color1 {
       font-size: 20px;
     }
+
+    .ingredients{
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+    }
+    
+    .Instruct{
+        width: 100%;
+    }
   
     .fat {
-      padding-right: 10px;
+        padding-right: 105px;
     }
   
     ul {
